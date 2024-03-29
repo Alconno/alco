@@ -21,7 +21,7 @@ pub async fn setup_libs_infrastructure(project_name: String) -> Result<(), Error
 
     // Create db.rs
     let mut file = File::create(format!("{}/db.rs", current_dir)).await?;
-    file.write_all(cargo_toml::CODE.as_bytes()).await?;
+    file.write_all(db_rs::CODE.as_bytes()).await?;
 
     // Create lib.rs
     let mut file = File::create(format!("{}/lib.rs", current_dir)).await?;

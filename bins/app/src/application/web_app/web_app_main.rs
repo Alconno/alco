@@ -7,7 +7,7 @@ use super::{add_feature::add_feature, setup::setup_project};
 pub async fn web_app_main(){
     // Parse command-line arguments
     let command = AlcoCommand::from_args();
-
+    println!("web app main: {:?}", command);
     // Perform actions based on the command
     match command {
         AlcoCommand::Setup{project_name} => {

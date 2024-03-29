@@ -257,6 +257,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "alco"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "config",
+ "env_logger",
+ "error",
+ "regex",
+ "serde",
+ "serde_json",
+ "structopt",
+ "strum 0.26.2",
+ "strum_macros 0.26.2",
+ "support",
+ "thiserror",
+ "tokio",
+]
+
+[[package]]
 name = "alloc-no-stdlib"
 version = "2.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1721,25 +1740,6 @@ dependencies = [
  "wasm-bindgen-futures",
  "web-sys",
  "winreg",
-]
-
-[[package]]
-name = "rust-api"
-version = "0.1.0"
-dependencies = [
- "actix-web",
- "config",
- "env_logger",
- "error",
- "regex",
- "serde",
- "serde_json",
- "structopt",
- "strum 0.26.2",
- "strum_macros 0.26.2",
- "support",
- "thiserror",
- "tokio",
 ]
 
 [[package]]

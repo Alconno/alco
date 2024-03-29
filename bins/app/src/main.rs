@@ -8,5 +8,6 @@ async fn main(){
 
     config::initialize().await;
 
+    println!("running config");
     application::configure().await;
 }
